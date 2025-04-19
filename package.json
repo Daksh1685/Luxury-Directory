@@ -4,11 +4,11 @@
   "description": "A luxury directory website featuring premium hotels, private jets, and yachts",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/css/styles.css -o ./public/styles.css",
-    "watch:css": "tailwindcss -i ./src/css/styles.css -o ./public/styles.css --watch",
-    "build": "next build",
-    "dev": "npm run watch:css",
-    "postinstall": "npm run build:css"
+    "build:css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css",
+  "watch:css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --watch",
+  "build": "npm run build:css",
+  "dev": "npm run watch:css",
+  "postinstall": "npm run build:css"
   },
   "keywords": [
     "luxury",
