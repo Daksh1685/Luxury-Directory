@@ -6,8 +6,9 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/css/styles.css -o ./public/styles.css",
     "watch:css": "tailwindcss -i ./src/css/styles.css -o ./public/styles.css --watch",
-    "build": "npm run build:css",
-    "dev": "npm run watch:css"
+    "build": "next build",
+    "dev": "npm run watch:css",
+    "postinstall": "npm run build:css"
   },
   "keywords": [
     "luxury",
@@ -19,8 +20,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }
