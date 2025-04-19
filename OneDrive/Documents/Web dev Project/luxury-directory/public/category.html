@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Luxury Directory</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-luxury-dark text-white px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-white rounded-md flex items-center justify-center">
+                    <span class="text-luxury-dark font-serif font-bold text-sm">LD</span>
+                </div>
+                <span class="font-serif text-xl font-semibold">Luxury Directory</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-luxury-gold transition">Home</a>
+                <a href="listings.html" class="hover:text-luxury-gold transition">Search Listings</a>
+                <a href="vendor-submission.html" class="hover:text-luxury-gold transition">Vendor Submission</a>
+            </nav>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-luxury-dark text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="category-title font-serif text-4xl md:text-5xl font-bold mb-4">Category</h1>
+                <p class="max-w-3xl mx-auto category-description">
+                    Explore our curated selection of luxury offerings.
+                </p>
+            </div>
+        </section>
+
+        <!-- Category Listings -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="category-listings">
+                    <!-- Listings will be populated here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-luxury-dark rounded-md flex items-center justify-center">
+                            <span class="text-white font-serif font-bold text-sm">LD</span>
+                        </div>
+                        <span class="font-serif text-xl font-semibold text-luxury-dark">Luxury Directory</span>
+                    </a>
+                    <p class="text-gray-600 mb-6">
+                        Discover the finest luxury services and assets worldwide, from premium hotels to private jets and yachts.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-luxury-gray hover:text-luxury-dark transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-luxury-gray hover:text-luxury-dark transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-luxury-gray hover:text-luxury-dark transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-serif text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-600 hover:text-luxury-dark transition">Home</a></li>
+                        <li><a href="listings.html" class="text-gray-600 hover:text-luxury-dark transition">Search Listings</a></li>
+                        <li><a href="vendor-submission.html" class="text-gray-600 hover:text-luxury-dark transition">Vendor Submission</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-lg font-bold mb-6">Categories</h3>
+                    <ul class="space-y-4">
+                        <li><a href="category.html?type=hotels" class="text-gray-600 hover:text-luxury-dark transition">Luxury Hotels</a></li>
+                        <li><a href="category.html?type=jets" class="text-gray-600 hover:text-luxury-dark transition">Private Jets</a></li>
+                        <li><a href="category.html?type=yachts" class="text-gray-600 hover:text-luxury-dark transition">Yachts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-lg font-bold mb-6">Contact</h3>
+                    <p class="text-gray-600 mb-4">info@luxurydirectory.com</p>
+                    <p class="text-gray-600">46 Luxury Avenue, Tower 2<br>Bandra, Bombay 235856</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 text-sm mb-4 md:mb-0">&copy; 2023 Luxury Directory. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-luxury-dark text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-600 hover:text-luxury-dark text-sm transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get category type from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryType = urlParams.get('type');
+            
+            // Update title and description based on category
+            const categoryTitle = document.querySelector('.category-title');
+            const categoryDescription = document.querySelector('.category-description');
+            const categoryListings = document.getElementById('category-listings');
+            
+            let listings = [];
+            
+            if (categoryType === 'hotels') {
+                categoryTitle.textContent = 'Luxury Hotels';
+                categoryDescription.textContent = 'Experience exceptional accommodations with world-class amenities and impeccable service.';
+                
+                listings = [
+                    {
+                        name: 'The Royal Palace',
+                        image: './images/hotel1.jpg',
+                        description: 'A magnificently appointed hotel in the heart of the metropolis.',
+                        location: 'Park Street, Kolkata',
+                        price: '₹10 lakh'
+                    },
+                    {
+                        name: 'Skyhigh Escape',
+                        image: './images/hotel2.jpg',
+                        description: 'A serene getaway above the bustling cityscape, offering global high-class amenities.',
+                        location: 'Benz-Circle, Vijayawada',
+                        price: '₹8.5 lakh'
+                    },
+                    {
+                        name: 'Ocean View Resort',
+                        image: './images/hotel3.jpg',
+                        description: 'Spectacular views combined with unparalleled luxury and service.',
+                        location: 'Guwahati, Assam',
+                        price: '₹7 lakh'
+                    }
+                ];
+            } else if (categoryType === 'jets') {
+                categoryTitle.textContent = 'Private Jets';
+                categoryDescription.textContent = 'Travel in ultimate style and comfort with our exclusive private jet services.';
+                
+                listings = [
+                    {
+                        name: 'Royal Wings',
+                        image: './images/jet1.jpg',
+                        description: 'Experience the pinnacle of luxury air travel with state-of-the-art facilities.',
+                        location: 'E-M Bypass',
+                        price: '₹9 lakh'
+                    },
+                    {
+                        name: 'Sky Elite',
+                        image: './images/jet2.jpg',
+                        description: 'Premium jet service with bespoke interiors and professional crew.',
+                        location: 'Bandra',
+                        price: '₹7.5 lakh'
+                    },
+                    {
+                        name: 'Luxury Airborne',
+                        image: './images/jet3.jpg',
+                        description: 'Customize your journey with the most exclusive private jet experience.',
+                        location: 'Noida',
+                        price: '₹5.2 lakh'
+                    }
+                ];
+            } else if (categoryType === 'yachts') {
+                categoryTitle.textContent = 'Luxury Yachts';
+                categoryDescription.textContent = 'Set sail on magnificent vessels with unparalleled luxury and comfort.';
+                
+                listings = [
+                    {
+                        name: 'Ocean\'s Queen',
+                        image: './images/yacht1.jpg',
+                        description: 'A luxurious yacht promising an exquisite sailing experience on the high seas.',
+                        location: 'Lakshadweep',
+                        price: '₹3.2 lakh'
+                    },
+                    {
+                        name: 'Azure Wanderer',
+                        image: './images/yacht2.jpg',
+                        description: 'Sleek design meets opulent comfort for an unforgettable maritime adventure.',
+                        location: 'Visakhapatnam',
+                        price: '2.1 lakh'
+                    },
+                    {
+                        name: 'Majestic Seas',
+                        image: './images/yacht3.jpg',
+                        description: 'Explore the world\'s most beautiful coastlines in absolute luxury.',
+                        location: 'Kerala',
+                        price: '1.3 lakh'
+                    }
+                ];
+            } else {
+                categoryTitle.textContent = 'All Listings';
+                categoryDescription.textContent = 'Explore our curated selection of luxury offerings across all categories.';
+            }
+            
+            // Generate listing cards
+            if (listings.length > 0) {
+                categoryListings.innerHTML = '';
+                
+                listings.forEach(listing => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-white rounded-xl overflow-hidden shadow-lg group';
+                    
+                    card.innerHTML = `
+                        <div class="h-60 overflow-hidden relative">
+                            <img src="${listing.image}" alt="${listing.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-serif text-xl font-bold">${listing.name}</h3>
+                                <span class="text-luxury-gold font-medium">${listing.price}</span>
+                            </div>
+                            <p class="text-gray-600 mb-3">${listing.description}</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                ${listing.location}
+                            </div>
+                            <a href="listing-detail.html" class="text-luxury-dark font-medium flex items-center">
+                                View Details
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    `;
+                    
+                    categoryListings.appendChild(card);
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
